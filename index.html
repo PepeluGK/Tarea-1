@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificación y Análisis de Requisitos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Planificación y Análisis de Requisitos</h1>
+    </header>
+
+    <main>
+        <section>
+            <p>La tienda consistirá en una tienda online para vender skins de League of Legends más baratas que en el cliente de Riot.</p>
+
+            <h2>Definición de Requisitos</h2>
+
+            <h3>Requisitos Funcionales</h3>
+            <ul>
+                <li><b>Catálogo:</b> Se podrán ver las skins del juego organizadas por rarezas.</li>
+                <li><b>Carrito de compra:</b> Habrá un carrito para añadir las skins que el cliente quiera y podrá eliminarlas a la hora de comprarlas.</li>
+                <li><b>Registro:</b> El cliente podrá crear una cuenta dentro de la página e iniciar sesión.</li>
+                <li><b>Historial:</b> Los clientes podrán ver las compras que han realizado anteriormente.</li>
+                <li><b>Métodos de pago:</b> Los usuarios podrán elegir entre varios métodos de pago, como tarjeta de crédito, PayPal, Paysafecard, etc.</li>
+            </ul>
+
+            <h3>Requisitos No Funcionales</h3>
+            <ul>
+                <li><b>Usabilidad:</b> Página simple y fácil de entender.</li>
+                <li><b>Rendimiento:</b> La web debe funcionar sin tirones.</li>
+                <li><b>Seguridad:</b> Manejar con seguridad los datos de los clientes para que no se filtre nada.</li>
+                <li><b>Disponibilidad:</b> 24/7.</li>
+                <li><b>Adaptabilidad:</b> Si sacan skins nuevas, no tardar en añadirlas a la web.</li>
+                <li><b>Mantenibilidad:</b> La estructura de la página debe estar bien organizada para evitar problemas en futuras actualizaciones.</li>
+            </ul>
+
+            <h3>Diseño de la Arquitectura</h3>
+            <ul>
+                <li><b>Frontend:</b> React, por su diseño adaptado a móvil y tablet.</li>
+                <li><b>Backend:</b> Node.JS, para manejar las compras de los clientes y el carro.</li>
+                <li><b>Base de datos:</b> MongoDB, para gestionar los usuarios, productos y pedidos.</li>
+                <li><b>Pagos:</b> Stripe, para manejar tarjetas y criptomonedas.</li>
+            </ul>
+
+            <h3>Implementación</h3>
+            <ul>
+                <li>Configurar API REST para gestionar el catálogo, el carro y los pagos.</li>
+                <li>Crear interfaces con React.</li>
+                <li>Integrar las opciones de pago.</li>
+            </ul>
+
+            <h3>Pruebas</h3>
+            <ul>
+                <li>Realizar pruebas con <b>JMeter</b> para ver si la página aguanta a varios usuarios.</li>
+                <li>Testear la compra y el carro en diferentes dispositivos y navegadores.</li>
+            </ul>
+
+            <h3>Despliegue y Mantenimiento</h3>
+            <ul>
+                <li>Desplegar la web en <b>AWS</b> para asegurar escalabilidad.</li>
+                <li>Monitorear el rendimiento de la app usando <b>CloudWatch</b> y hacer actualizaciones periódicas para mejorar y corregir problemas.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda Online de Skins</p>
+    </footer>
+</body>
+</html>
